@@ -12,16 +12,16 @@ import Load from "../User/Load";
 function Routes() {
 
 const router = createBrowserRouter([
-  {
-    path:"/",
-    element:<Load/>
-  },
     {
       path: "/",
       element:
        <UserLayout/>,
 
       children:[
+        {
+          path:"/",
+          element:<Load/>
+        },
         
         {
             path:'home',
