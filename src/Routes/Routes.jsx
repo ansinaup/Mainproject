@@ -18,10 +18,10 @@ const router = createBrowserRouter([
        <UserLayout/>,
 
       children:[
-        {
-          path:"/",
-          element:<Load/>
-        },
+        // {
+        //   path:"/",
+        //   element:<Load/>
+        // },
         
         {
             path:'home',
