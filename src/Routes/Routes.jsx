@@ -4,23 +4,37 @@ import {
 } from "react-router-dom";
 import UserLayout from "../User/UserLayout";
 import AdminHome from "../User/pages/Home";
+import HomeBanner from "../User/components/homebanner/HomeBanner";
+import Shopping from "../User/Shopping";
+import Load from "../User/Load";
 
 
 function Routes() {
 
 const router = createBrowserRouter([
+  {
+    path:"/",
+    element:<Load/>
+  },
     {
       path: "/",
       element:
        <UserLayout/>,
 
       children:[
+        
         {
             path:'home',
             element:<AdminHome/>
-        }
+        },
+       
       ]
     },
+
+    {
+      path:"/shopping",
+      element:<Shopping/>
+    }
   ]);
 
 return (

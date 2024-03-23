@@ -1,6 +1,4 @@
 import React from 'react'
-
-
 import Item from './Item'
 import Footer from './footer/Footer'
 import { Outlet } from 'react-router-dom'
@@ -12,18 +10,16 @@ import Header from './header/Header'
 
 
 
-
-function UserLayout  ()  {
+function UserLayout() {
   return (
     <div>
-<Header/>
-        <Item/>
-       <Outlet/>
-        
-        
-        {/* <Minicard/>
+      <Header />
+      <Item />
+      <Outlet />
+
+      {/*<Minicard/>
        <Card/> */}
-        <Footer/>
+      <Footer/>
     </div>
   )
 }

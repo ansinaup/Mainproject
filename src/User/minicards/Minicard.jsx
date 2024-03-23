@@ -40,7 +40,7 @@ function Minicard  ({style,icon,para,para1})  {
   return (
    
                 <>
-                <div className = {` flex justify-evenly gap-4 items-center py-5 px-10 rounded-lg max-[612px]:mb-3  ${style}`}>
+                <div className = {` flex justify-evenly items-center  py-5 w-full rounded-lg max-[612px]:mb-3  ${style}`}>
                 <div>
                     <i className='text-2xl'>{icon}</i>
                 </div>

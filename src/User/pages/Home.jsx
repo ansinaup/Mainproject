@@ -9,6 +9,7 @@ import Offers from '../offers/Offers';
 import { IoIosArrowRoundForward } from "react-icons/io";
 import HotOffers from '../hotoffers/HotOffers';
 import Latest from '../latest/Latest';
+import SmCards from '../SmCards';
 
 
 
@@ -18,13 +19,14 @@ function Home() {
     
 
   return (
-    <>
+    <div className=''>
 
    <div>
     <HomeBanner/>
    </div>
-   
-   <div className="flex justify-evenly p-14 flex-col sm:flex-row md:flex-row">
+  
+   <div className='mx-5 md:mx-36'>
+   <div className="flex justify-evenly p-14 flex-col sm:flex-row md:flex-row gap-6">
       {
         data2.map((item,index)=><Minicard  icon={item.icon} para={item.para} para1={item.para1} style={item.style} key={index} /> )}
           </div>
@@ -39,13 +41,13 @@ function Home() {
 <div className="flex  justify-between  flex-col sm:flex-row  mx-5">
           <h2 className="text-2xl font-medium">New  Products</h2>
           <div className="flex ">
-            <button className="text-green-500 text-m font-bold font-mono">View All</button>
-            <IoIosArrowRoundForward className="text-green-500 text-3xl mt-1 cursor-pointer" />
+            <button className="text-teal-500 text-m font-bold font-mono">View All</button>
+            <IoIosArrowRoundForward className="text-teal-500 text-3xl mt-1 cursor-pointer" />
           </div>
         </div>
       
 
-    <div className='flex flex-wrap gap-5 justify-center'>
+    <div className='grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 justify-center gap-5'>
             {data1.map((item,index)=><CardProduct img={item.img}  name={item.para} para={item.para1} key={index} />)}
 
     </div>
@@ -58,13 +60,13 @@ function Home() {
 <div className="flex  justify-between  flex-col sm:flex-row mx-5">
           <h2 className="text-2xl font-medium">Popular Products</h2>
           <div className="flex ">
-            <button className="text-green-500 text-m font-bold font-mono">View All</button>
-            <IoIosArrowRoundForward className="text-green-500 text-3xl mt-1 cursor-pointer" />
+            <button className="text-teal-500 text-m font-bold font-mono">View All</button>
+            <IoIosArrowRoundForward className="text-teal-500 text-3xl mt-1 cursor-pointer" />
           </div>
         </div>
       
 
-    <div className='flex flex-wrap gap-5 justify-center'>
+    <div className='grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 justify-center gap-5'>
             {data1.map((item,index)=><CardProduct img={item.img}  name={item.para} para={item.para1} key={index} />)}
 
     </div>
@@ -77,26 +79,28 @@ function Home() {
     <div>
 
 <div className="flex  justify-between  flex-col sm:flex-row  mx-5">
-          <h2 className="text-2xl font-medium">Top Products</h2>
+          <h2 className="text-2xl font-medium ">Top Products</h2>
           <div className="flex ">
-            <button className="text-green-500 text-m font-bold font-mono">View All</button>
-            <IoIosArrowRoundForward className="text-green-500 text-3xl mt-1 cursor-pointer" />
+            <button className="text-teal-500 text-m font-bold font-mono">View All</button>
+            <IoIosArrowRoundForward className="text-teal-500 text-3xl mt-1 cursor-pointer" />
           </div>
         </div>
 
         
       
 
-    <div className='flex flex-wrap gap-5 justify-center'>
+    <div className='grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 justify-center gap-5'>
             {data1.map((item,index)=><CardProduct img={item.img}  name={item.para} para={item.para1} key={index} />)}
 
     </div>
 
+    <SmCards/>
 
-    <div className="flex justify-evenly p-14 flex-col sm:flex-row md:flex-row">
+
+    {/* <div className="flex justify-evenly p-14 flex-col sm:flex-row md:flex-row gap-6">
       {
         data2.map((item,index)=><Minicard  icon={item.icon} para={item.para} para1={item.para1} style={item.style} key={index} /> )}
-          </div>
+          </div> */}
 
     </div>
 
@@ -106,13 +110,13 @@ function Home() {
 <div className="flex  justify-between  flex-col sm:flex-row mx-5 ">
           <h2 className="text-2xl font-medium">Medical Products</h2>
           <div className="flex ">
-            <button className="text-green-500 text-m font-bold font-mono">View All</button>
-            <IoIosArrowRoundForward className="text-green-500 text-3xl mt-1 cursor-pointer" />
+            <button className="text-teal-500 text-m font-bold font-mono">View All</button>
+            <IoIosArrowRoundForward className="text-teal-500 text-3xl mt-1 cursor-pointer" />
           </div>
         </div>
       
 
-    <div className='flex flex-wrap gap-5 justify-center '>
+    <div className='grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 justify-center gap-5 '>
             {data1.map((item,index)=><CardProduct img={item.img}  name={item.para} para={item.para1} key={index} />)}
 
     </div>
@@ -125,27 +129,28 @@ function Home() {
 <div className="flex  justify-between  flex-col sm:flex-row mx-5">
           <h2 className="text-2xl font-medium">Upcoming Products</h2>
           <div className="flex ">
-            <button className="text-green-500 text-m font-bold font-mono">View All</button>
-            <IoIosArrowRoundForward className="text-green-500 text-3xl mt-1 cursor-pointer" />
+            <button className="text-teal-600 text-m font-bold font-mono">View All</button>
+            <IoIosArrowRoundForward className="text-teal-600 text-3xl mt-1 cursor-pointer" />
           </div>
         </div>
       
 
-    <div className='flex flex-wrap gap-5 justify-center'>
+    <div className='grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 justify-center'>
             {data1.map((item,index)=><CardProduct img={item.img}  name={item.para} para={item.para1} key={index} />)}
 
     </div>
 
     </div>
 
+
     <HotOffers/>
     <Latest/>
 
     
 
-   
+   </div>
     
-    </>
+    </div>
   )
 }
 

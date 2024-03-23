@@ -18,5 +18,7 @@
         img:"https://5.imimg.com/data5/SELLER/Default/2020/11/BK/HE/CA/7318943/maxiocel-10x10jpg.jpg",
         para:"Wound dressing",
         para1:"$25.75"
-    }
+    },
+  
+
 ]
