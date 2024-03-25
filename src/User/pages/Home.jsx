@@ -10,6 +10,7 @@ import { IoIosArrowRoundForward } from "react-icons/io";
 import HotOffers from '../hotoffers/HotOffers';
 import Latest from '../latest/Latest';
 import SmCards from '../SmCards';
+import Slide from '../components/homebanner/Slide';
 
 
 
@@ -22,7 +23,7 @@ function Home() {
     <div className=''>
 
    <div>
-    <HomeBanner/>
+  <Slide/>
    </div>
   
    <div className='mx-5 md:mx-36'>

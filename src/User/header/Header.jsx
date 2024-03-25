@@ -4,6 +4,7 @@ import { FaHeart } from "react-icons/fa";
 import { FaSearch } from "react-icons/fa";
 import Dropdown from "../dropdown/dropdown";
 import { Link } from "react-router-dom";
+import Dropdown2 from "../dropdown/dropdown2";
 function Header() {
     return (
       <>
@@ -17,7 +18,7 @@ function Header() {
 
             <div className="border py-0  rounded-lg max-[1000px]:hidden items-center ">
         <div className=" flex justify-center items-center">
-            <div className="ms-4 text-teal-600">All Categories</div>
+            <div className="ms-4 text-teal-600"> <Dropdown2/></div>
             <span className=" bg-teal-600 w-[3px] h-[20px] ms-3"></span>
             <input placeholder="search medicines,medical products" className="ps-3 bg-transparent outline-none " type="text" />
 
